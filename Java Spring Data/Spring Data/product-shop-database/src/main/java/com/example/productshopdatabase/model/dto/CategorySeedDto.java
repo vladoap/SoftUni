@@ -1,0 +1,33 @@
+package com.example.productshopdatabase.model.dto;
+
+import jakarta.validation.constraints.Size;
+import org.hibernate.validator.constraints.Length;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "category")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class CategorySeedDto {
+
+    @XmlElement(name = "name")
+    private String name;
+
+    public CategorySeedDto() {
+    }
+
+    public CategorySeedDto(String name) {
+        this.name = name;
+    }
+
+    @Size(min = 3, max = 15)
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}

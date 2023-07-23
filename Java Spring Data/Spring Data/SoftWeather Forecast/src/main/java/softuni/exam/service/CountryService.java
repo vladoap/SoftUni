@@ -1,10 +1,10 @@
 package softuni.exam.service;
 
 
-import java.io.IOException;
-import java.util.Optional;
+import softuni.exam.models.entity.Country;
 
-// TODO: Implement all methods
+import java.io.IOException;
+
 public interface CountryService {
 
     boolean areImported();
@@ -12,4 +12,6 @@ public interface CountryService {
     String readCountriesFromFile() throws IOException;
 	
 	String importCountries() throws IOException;
+
+    Country findById(Long id);
 }

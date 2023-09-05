@@ -1,0 +1,311 @@
+[33mcommit c7eb07a6df552a0f7891ce1300b6302d35f36b5a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 13:50:13 2023 +0300
+
+    initial commit
+
+[33mcommit 3c1eae4832562a71bb5c44d9f51b477f7dd81d5b[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 13:49:09 2023 +0300
+
+    Revert "initial commit Pathfinder app"
+    
+    This reverts commit 4e6ce7991df1909004ce1c5f97aea4828d48e6ab.
+
+[33mcommit 4e6ce7991df1909004ce1c5f97aea4828d48e6ab[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 13:45:55 2023 +0300
+
+    initial commit Pathfinder app
+
+[33mcommit 37cc587fdbc6171e9d4b82e3577db34ac1fee0f8[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 07:36:32 2023 +0300
+
+    Delete MobiLeLeLe
+
+[33mcommit 54f8872a6c8d2319245e98d095df140ade461069[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 07:34:59 2023 +0300
+
+    Revert "deletion"
+    
+    This reverts commit a55bd240187f0473e22edc8da8ac28815d918b7e.
+
+[33mcommit a55bd240187f0473e22edc8da8ac28815d918b7e[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 07:19:54 2023 +0300
+
+    deletion
+
+[33mcommit e5fafb59614be2abe754c8130b6c2ba3accd58ba[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 06:54:49 2023 +0300
+
+    Add SpringWeb directory
+
+[33mcommit f999532f13b6199e56620acf821bcc8721f61b76[m
+Author: Vladimir Apostolov <114332177+vladoap@users.noreply.github.com>
+Date:   Tue Sep 5 05:27:31 2023 +0300
+
+    Delete SpringWeb directory
+
+[33mcommit 2aea82a11bf2ebdb91c680cdea0f24bf7f9d91b6[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 04:48:33 2023 +0300
+
+    add solution for mobilele app
+
+[33mcommit df2068352733713d617e399fb431356167b6f2d1[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 04:11:08 2023 +0300
+
+    add mobilelele app
+
+[33mcommit 541527c2b663ac70f2ae6c3039dfaae2ee4f4e69[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 04:09:35 2023 +0300
+
+    mobilele app
+
+[33mcommit b347043ef6b6723edf19c21010e5476941fec39e[m
+Author: Vladimir Apostolov <114332177+vladoap@users.noreply.github.com>
+Date:   Tue Sep 5 04:06:01 2023 +0300
+
+    Delete Spring Web/HTTP Protocol directory
+
+[33mcommit 76d8b1c5f944b8893d8c3bd2a759b89e49a57f86[m
+Merge: fbe4f5f 89cc8fd
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 04:04:14 2023 +0300
+
+    Merge branch 'main' of https://github.com/vladoap/SoftUni
+
+[33mcommit 89cc8fdab7ba8609db268c7dcb8167dd18786e17[m
+Author: Vladimir Apostolov <114332177+vladoap@users.noreply.github.com>
+Date:   Tue Sep 5 04:04:39 2023 +0300
+
+    Delete SpringWeb directory
+
+[33mcommit fbe4f5f95c0396a3f9ec190fc8b213249837a582[m
+Merge: 7b440f9 d1ff5c8
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 04:03:32 2023 +0300
+
+    Merge branch 'main' of https://github.com/vladoap/SoftUni
+
+[33mcommit 7b440f9312bacf56e57952491d4301195c52d6ef[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Sep 5 04:03:27 2023 +0300
+
+    adding solution of mobilelele app
+
+[33mcommit d1ff5c8257e97933241dfcba66971f78d499a498[m
+Author: Vladimir Apostolov <114332177+vladoap@users.noreply.github.com>
+Date:   Tue Sep 5 03:45:10 2023 +0300
+
+    Create readme.txt
+
+[33mcommit b82211e10e5fdf20b2e680bbf4a95c0a7c13e1bd[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Mon Jul 24 02:23:36 2023 +0300
+
+    add solution for task -SoftWeather Forecast
+
+[33mcommit 6a0bc017fd5b6cf4d3beb9c32ad62f5516015d88[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Sun Jul 23 21:50:31 2023 +0300
+
+    asdas
+
+[33mcommit 71dd3a0ac81ca7682e29af14d3b612cbc12ae88d[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Sun Jul 23 21:34:37 2023 +0300
+
+    asdas
+
+[33mcommit ff73b6372df1cb5ee3faf1bd4f0c88472d44c7f8[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Wed Jul 19 22:51:41 2023 +0300
+
+    add solution of Real Estate Agency
+    
+    Java Spring Data - Exam Preparation
+
+[33mcommit cf62372dc1ce06564ed0c2d14c9ccdc51eb23c99[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Wed Jul 19 03:14:02 2023 +0300
+
+    solution for mini project Car Repair Service - MVC
+
+[33mcommit c875320ee742e196d62f08394bc43282ab5f2f17[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Mon Jul 17 02:24:39 2023 +0300
+
+    add solution for Product Shop Database
+    
+    Spring Data - XML Exercise.
+
+[33mcommit 693156df563be36318cd27c4d601b59c2e2bf77c[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Thu Jul 13 20:55:08 2023 +0300
+
+    add solution for product-shop
+    
+    json exercise
+
+[33mcommit cf3672d85d14f9afce0cfb3c216dbd80e758b16a[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Sat Jul 8 10:28:47 2023 +0300
+
+    add solution - DTO, spring data
+
+[33mcommit 3be085a88dfb9a3111c9dd841b079e8df1071c05[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Sat Jul 8 10:28:20 2023 +0300
+
+    add solution - game-store
+    
+    Spring Data - Data Transfer Objects, Exercise
+
+[33mcommit cfbc6ad0ca0923b4e0572af75eb94c8b8cf45d86[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue Jul 4 23:59:30 2023 +0300
+
+    add solutions
+    
+    Spring Data AdvancedQuerying - Exercise
+
+[33mcommit c9726f462473e1fdf2a95c3d78131e73c9d6e4a6[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Sun Jul 2 13:42:51 2023 +0300
+
+    add solutions for tasks - Spring Data Advanced Quering
+
+[33mcommit 4c58db1277748db1ac75abedd5c578d2a0356102[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Thu Jun 29 21:54:37 2023 +0300
+
+    add solution - spring data, Bookshop system
+
+[33mcommit f3f0f28a29f269e4c2e992407b477d12c87475dd[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Sun Jun 25 23:59:08 2023 +0300
+
+    add solutions - Code first - Exercise
+
+[33mcommit f8bfbcde4ccaf05b5d5dbfd680f7125d925fcdab[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Sun Jun 25 08:55:43 2023 +0300
+
+    add solutions for tasks - Code First - Lab
+
+[33mcommit 706e3d443d9cc09a4d95ca331ba0bebca152a7e2[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Thu Jun 22 22:16:55 2023 +0300
+
+    add solutions - Hibernate
+
+[33mcommit 883af6b4dd7ab8f66c9d483e01dfa626bb8d36ad[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Sun Jun 18 23:04:46 2023 +0300
+
+    add custom miniORM
+
+[33mcommit bcd6997d5e464acf5f6ca84bd17b61e957af6aa2[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Sat Jun 17 00:51:12 2023 +0300
+
+    add solutions - Java DB Apps
+
+[33mcommit e59590150465df7a718dfbd7b16c15a31c4d8853[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Fri Jun 9 22:52:39 2023 +0300
+
+    exam-prep Java DB
+
+[33mcommit d467501c503fa8d54face66cefd3d917bf655e53[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Wed May 31 19:13:09 2023 +0300
+
+    add solutions - Database Programmability - Exercise
+
+[33mcommit 783c1fac57c46820ea957278fbf0a01060d5ba0b[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Mon May 29 01:29:21 2023 +0300
+
+    add solutions - Database Programmability - Lab
+
+[33mcommit a5113138d962acdf84587d085a81bf649f0c7468[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Tue May 23 01:08:06 2023 +0300
+
+    Subqueries and JOINs - Exercise
+
+[33mcommit 93fa0ee741bde353db7188e8823e950468c2e32f[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Fri May 19 02:21:38 2023 +0300
+
+    Subqueries and JOINs - Lab
+
+[33mcommit 1686baf3b6c0f97aca35310fecf523e588f93509[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Mon May 15 00:42:20 2023 +0300
+
+    add SQL tasks - Table Relations
+
+[33mcommit 9c0066a3d16d539662f85538fdd5d783232a7489[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Mon May 8 10:36:15 2023 +0300
+
+    add SQL solutions - Data Aggregation
+
+[33mcommit 8775ce19097477af413c3f9783f9606a5636d4bd[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Thu May 4 22:39:39 2023 +0300
+
+    add queries - Build-In functions - Exercise
+
+[33mcommit 3720700d51e558ddd35d183a5cd7892e523c5fe1[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Thu May 4 20:44:30 2023 +0300
+
+    add queries - Build-In functions - Lab
+
+[33mcommit 57a48d8ddd6e9640398f07bde5ad77fc538d5361[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Wed May 3 22:10:14 2023 +0300
+
+    add queries for CRUD
+
+[33mcommit b0c52a5a3aa75016bd0e67448e207b393cacd530[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Mon May 1 14:04:46 2023 +0300
+
+    add solutions and SQL queries
+    
+    Data Definition and Datatypes - Exercise
+
+[33mcommit 83fa085f0eee6d6233659ee348b619a87348ff96[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Mon May 1 14:04:02 2023 +0300
+
+    d
+
+[33mcommit 3ea10ca4e42534f87f8445267cb5209a9ef9a9c2[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Mon Apr 24 10:41:28 2023 +0300
+
+    organize repo
+
+[33mcommit f13eb897f73a5c0fe3bf16c7ca5f73408a61ec3c[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Mon Apr 24 10:33:19 2023 +0300
+
+    organize repo
+
+[33mcommit 5a64efb23fe31685b2356fb9eab631c97fa1a399[m
+Author: vladoap <vladimir.apostolov96@gmail.com>
+Date:   Mon Apr 24 10:32:07 2023 +0300
+
+    Initial commit

@@ -33,15 +33,20 @@ public class UserServiceImpl implements UserService {
             logout();
             return false;
         } else {
+
           boolean successfulLogin = passwordEncoder.matches(userLoginServiceDto.getRawPassword(), userOpt.get().getPassword());
           
           if (successfulLogin) {
               User loggedInUser = userOpt.get();
+
               currentUser
                       .setLoggedIn(true)
                       .setUsername(loggedInUser.getUsername())
                       .setFirstName(loggedInUser.getFirstName())
                       .setLastName(loggedInUser.getLastName());
+
+
+
 
               loggedInUser.getRoles().forEach(r -> currentUser.addRole(r.getRole()));
 

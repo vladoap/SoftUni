@@ -1,13 +1,11 @@
 package com.example.mobilelele_web.model.entity;
 
 import com.example.mobilelele_web.model.enums.Role;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.Set;
 
 @Entity
 @Table(name = "users")
@@ -38,8 +36,8 @@ public class User extends BaseEntity{
     @Column
     private LocalDateTime modified;
 
-    @ManyToOne
-    private UserRole role;
+    @ManyToMany
+    private Set<UserRole> roles;
 
 
 

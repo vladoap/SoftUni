@@ -9,5 +9,8 @@
         <module name="test-commit" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="test-commit" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>

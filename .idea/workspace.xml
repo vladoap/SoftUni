@@ -23,6 +23,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Vlado/SoftUni/SoftUni/test-commit",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/z00431ym/Downloads/Find-a-Star Skeleton/test-commit/src/main/java/org/example/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
@@ -36,21 +39,11 @@
       <option name="presentableId" value="Default" />
       <updated>1693909710289</updated>
       <workItem from="1693909711728" duration="27000" />
+      <workItem from="1693909879375" duration="196000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

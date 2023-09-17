@@ -1,0 +1,10 @@
+# MongoDB server host and port
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+
+# MongoDB database name
+spring.data.mongodb.database=CompanyData
+
+spring.data.mongodb.authentication-database=admin
+spring.data.mongodb.username=admin
+spring.data.mongodb.password=admin

@@ -1,0 +1,68 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/commons :: head" >
+
+</head>
+<body>
+<main class="p-5 align-content-center bg-blur my-register-div">
+    <h1 class="    border-bottom mb-5">Login</h1>
+    <div class="d-flex justify-content-center">
+
+        <div class="row g-3 align-items-center">
+
+            <form
+                    th:action="@{/users/login}"
+                    th:method="post"
+                   th:object="${userLoginBindingModel}"
+            >
+                <div>
+                    <div   class="col-auto">
+                        <label for="inputUsername" class="col-form-label ">Username</label>
+                    </div>
+                    <div class="col-auto">
+                        <input th:field="*{username}"
+                               th:errorclass="is-invalid"
+                               type="text"
+                               name="username"
+                               required minlength="1" maxlength="20"
+                               id="inputUsername"
+                               class="form-control"
+                               aria-describedby="usernameHelpInline">
+                        <small th:errors="*{username}"  class="invalid-feedback rounded">
+                        </small>
+                    </div>
+                </div>
+                <div>
+                    <div  class="col-auto">
+                        <label for="inputPassword" class="col-form-label ">Password</label>
+                    </div>
+                    <div class="col-auto">
+                        <input th:field="*{rawPassword}"
+                               th:errorclass="is-invalid"
+                               type="password"
+                               name="password"
+                               required minlength="1" maxlength="20"
+                               id="inputPassword" class="form-control"
+                               aria-describedby="passwordHelpInline">
+                        <small th:errors="*{rawPassword}" class="invalid-feedback rounded">
+                        </small>
+                    </div>
+                </div>
+
+                <p th:if="${notFound}" class="text-danger">
+                    Invalid username or password.
+                </p>
+
+
+                <div class="d-flex justify-content-center mt-2">
+                    <button class="btn btn-primary btn-block w-50" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</main>
+<footer th:replace="fragments/commons :: footer" >
+</footer>
+</body>
+</html>

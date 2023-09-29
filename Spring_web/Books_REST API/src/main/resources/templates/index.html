@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <button id="loadBooks">LOAD ALL BOOKS</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Isbn</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="bookListTable">
+        </tbody>
+    </table>
+
+        // Function to load and display all books
+
+    </script>
+
+    <form id="addBookForm">
+        <h3>ADD FORM</h3>
+        <label>TITLE</label>
+        <input type="text" id="title" placeholder="Title...">
+        <label>AUTHOR</label>
+        <input type="text" id="author" placeholder="Author...">
+        <label>ISBN</label>
+        <input type="text" id="isbn" placeholder="Isnb...">
+        <button id="addBook">Submit</button>
+    </form>
+
+    <form id="updateBookForm">
+        <h3>UPDATE FORM</h3>
+        <label>TITLE</label>
+        <input type="text" id="titleU" placeholder="Title...">
+        <label>AUTHOR</label>
+        <input type="text" id="authorU" placeholder="Author...">
+        <label>ISBN</label>
+        <input type="text" id="isbnU" placeholder="Isnb...">
+        <button >Submit</button>
+    </form>
+    <script th:src="@{/app.js}"> </script>
+</body>
+</html>
+
+<!--Feel free to change/update/modify the HTML Structure-->

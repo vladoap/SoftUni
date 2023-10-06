@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c03e8e5-779f-470e-ae3f-26220c0705f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../Notes/Spring Web/HATEOAS.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Notes/Spring Web/HATEOAS.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Notes/Spring Web/Spring Security.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Notes/Spring Web/Spring Security.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Notes/Spring Web/Web API and REST Controllers.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Notes/Spring Web/Web API and REST Controllers.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Spring_web/Books_REST API/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Spring_web/Books_REST API/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Spring_web/Books_REST API/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Spring_web/Books_REST API/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Spring_web/Pathfinder/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Spring_web/Pathfinder/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2WGCX3uxM6qNSq6AtvvYWyV94nD" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Vlado/SoftUni/SoftUni/OOP-Java-Feb-2023/exam-prep/ZooApp/ZooApp",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c03e8e5-779f-470e-ae3f-26220c0705f2" name="Changes" comment="" />
+      <created>1696349569421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696349569421</updated>
+      <workItem from="1696349570435" duration="272000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

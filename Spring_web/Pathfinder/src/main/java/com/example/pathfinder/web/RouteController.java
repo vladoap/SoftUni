@@ -1,6 +1,8 @@
 package com.example.pathfinder.web;
 
+import com.example.pathfinder.model.CloudinaryImage;
 import com.example.pathfinder.model.binding.CommentBindingModel;
+import com.example.pathfinder.model.binding.PictureBindingModel;
 import com.example.pathfinder.model.binding.RouteAddBindingModel;
 import com.example.pathfinder.model.service.CommentServiceModel;
 import com.example.pathfinder.model.service.PictureServiceModel;
@@ -8,23 +10,18 @@ import com.example.pathfinder.model.service.RouteAddServiceModel;
 import com.example.pathfinder.model.view.PictureViewModel;
 import com.example.pathfinder.model.view.RouteDetailsViewModel;
 import com.example.pathfinder.model.view.RouteSummaryViewModel;
-import com.example.pathfinder.service.CommentService;
-import com.example.pathfinder.service.PictureService;
-import com.example.pathfinder.service.RouteService;
+import com.example.pathfinder.service.*;
+import com.example.pathfinder.util.CurrentUser;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -36,12 +33,18 @@ public class RouteController {
     private final ModelMapper modelMapper;
     private final PictureService pictureService;
     private final CommentService commentService;
+    private final CloudinaryService cloudinaryService;
+    private final CurrentUser currentUser;
+    private final UserService userService;
 
-    public RouteController(RouteService routeService, ModelMapper modelMapper, PictureService pictureService, CommentService commentService) {
+    public RouteController(RouteService routeService, ModelMapper modelMapper, PictureService pictureService, CommentService commentService, CloudinaryService cloudinaryService, CurrentUser currentUser, UserService userService) {
         this.routeService = routeService;
         this.modelMapper = modelMapper;
         this.pictureService = pictureService;
         this.commentService = commentService;
+        this.cloudinaryService = cloudinaryService;
+        this.currentUser = currentUser;
+        this.userService = userService;
     }
 
     @GetMapping("/all")
@@ -56,7 +59,6 @@ public class RouteController {
                 }).collect(Collectors.toList());
 
         model.addAttribute("routes", routeViewModel);
-
 
 
         return "routes";
@@ -74,54 +76,34 @@ public class RouteController {
 
     @PostMapping("/details/{id}/comment")
     public String addComment(@PathVariable Long id, @Valid CommentBindingModel commentBindingModel, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
-         if (bindingResult.hasErrors()) {
-             redirectAttributes.addFlashAttribute("commentBindingModel", commentBindingModel);
-             redirectAttributes.addFlashAttribute("org.springframework.validation.BindingResult.commentBindingModel", bindingResult);
-         }
+        if (bindingResult.hasErrors()) {
+            redirectAttributes.addFlashAttribute("commentBindingModel", commentBindingModel);
+            redirectAttributes.addFlashAttribute("org.springframework.validation.BindingResult.commentBindingModel", bindingResult);
+        }
 
-         commentService.addComment(id, modelMapper.map(commentBindingModel, CommentServiceModel.class));
+        commentService.addComment(id, modelMapper.map(commentBindingModel, CommentServiceModel.class));
 
         return "redirect:/routes/details/" + id;
     }
 
     @PostMapping("/details/{id}/picture")
-    public String addPicture(@PathVariable Long id, @RequestParam("picture") MultipartFile file) {
+    public String addPicture(@PathVariable Long id, PictureBindingModel pictureBindingModel) throws IOException {
+
+        MultipartFile file = pictureBindingModel.getPicture();
 
         if (file.isEmpty()) {
             // Handle the case where no file was uploaded
             return "redirect:/routes/details/" + id;
         }
 
-        try {
-            // Define the directory where you want to save the uploaded file
-            String uploadDir = "C:/Users/z00431ym/Downloads"; // Replace with your desired directory
+        String title = file.getOriginalFilename();
+        CloudinaryImage uploaded = cloudinaryService.upload(file);
 
+        PictureServiceModel pictureServiceModel = new PictureServiceModel()
+                .setUrl(uploaded.getUrl())
+                .setTitle(title);
 
-            // Generate a unique file name
-            String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-            String uniqueFileName = System.currentTimeMillis() + "_" + fileName;
-
-            // Create the absolute path to the saved file
-            Path absolutePath = Paths.get(uploadDir + File.separator + uniqueFileName);
-
-            // Save the file to the specified directory
-            file.transferTo(absolutePath.toFile());
-
-            // Now you have the absolute path to the saved file
-            String absoluteFilePath = absolutePath.toString();
-
-            // Do whatever you need with the absoluteFilePath, e.g., store it in a database
-            PictureServiceModel pictureServiceModel = new PictureServiceModel();
-            pictureServiceModel.setUrl(absoluteFilePath);
-
-            pictureService.savePictureForRoute(id, pictureServiceModel);
-
-            return "redirect:/routes/details/" + id;
-        } catch (IOException e) {
-            e.printStackTrace();
-            // Handle the exception
-        }
-
+        pictureService.savePictureForRoute(id, pictureServiceModel);
 
         return "redirect:/routes/details/" + id;
     }
@@ -156,7 +138,7 @@ public class RouteController {
 
         List<RouteSummaryViewModel> routeSummaryViewModel = routeService.findRoutesByCategoryName(categoryName)
                 .stream()
-                .map(routeServiceModel ->  {
+                .map(routeServiceModel -> {
                     RouteSummaryViewModel viewModel = modelMapper.map(routeServiceModel, RouteSummaryViewModel.class);
                     viewModel.setPictureUrl(pictureService.findFirstPictureByRouteId(routeServiceModel.getId()));
 

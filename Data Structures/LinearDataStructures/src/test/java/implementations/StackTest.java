@@ -15,12 +15,15 @@ public class StackTest {
         for (int i = 0; i < 100; i++) {
             stack.push(String.valueOf(i));
         }
+
     }
 
     @Test
     public void testPushShouldAddAtTheTop() {
         stack.push("Slayer");
         assertEquals("Slayer", stack.peek());
+
+
     }
 
     @Test

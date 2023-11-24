@@ -2,7 +2,9 @@ package implementations;
 
 import interfaces.AbstractTree;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 public class Tree<E> implements AbstractTree<E> {
@@ -43,12 +45,56 @@ public class Tree<E> implements AbstractTree<E> {
 
     @Override
     public String getAsString() {
-        return null;
+        StringBuilder sb = new StringBuilder();
+
+        doDfs(this, sb, 0);
+
+       return sb.toString().trim();
+    }
+
+    private void doDfs(Tree<E> tree, StringBuilder sb, int indent) {
+        sb
+                .append(getPadding(indent))
+                .append(tree.getKey())
+                .append(System.lineSeparator());
+
+        for (Tree<E> child : tree.children) {
+            doDfs(child, sb, indent + 2);
+        }
+
+    }
+
+    private String getPadding(int indent) {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append(" ".repeat(Math.max(0, indent)));
+        return sb.toString();
     }
 
     @Override
     public List<E> getLeafKeys() {
-        return null;
+        List<E> leafs = new ArrayList<>();
+
+        doBfs(this, leafs);
+
+        return leafs;
+    }
+
+    private void doBfs(Tree<E> tree, List<E> leafs) {
+        Deque<Tree<E>> deque = new ArrayDeque<>();
+        deque.offer(tree);
+
+        while (!deque.isEmpty()) {
+            Tree<E> element = deque.poll();
+
+            if (element.children.size() == 0) {
+                leafs.add(element.getKey());
+            }
+
+            for (Tree<E> child : element.children) {
+                deque.offer(child);
+            }
+        }
     }
 
     @Override

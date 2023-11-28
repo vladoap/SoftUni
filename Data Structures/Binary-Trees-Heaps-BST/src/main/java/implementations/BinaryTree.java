@@ -67,21 +67,80 @@ public class BinaryTree<E> implements AbstractBinaryTree<E> {
 
     @Override
     public List<AbstractBinaryTree<E>> preOrder() {
-        return null;
+        List<AbstractBinaryTree<E>> result = new ArrayList<>();
+
+        preOrderDfsTraverse(this, result);
+
+        return result;
+    }
+
+    private void preOrderDfsTraverse(BinaryTree<E> tree, List<AbstractBinaryTree<E>> result) {
+        result.add(tree);
+        if (tree.getLeft() != null) {
+            preOrderDfsTraverse(tree.left, result);
+        }
+
+        if (tree.getRight() != null) {
+            preOrderDfsTraverse(tree.right, result);
+        }
     }
 
     @Override
     public List<AbstractBinaryTree<E>> inOrder() {
-        return null;
+
+        List<AbstractBinaryTree<E>> result = new ArrayList<>();
+
+        inOrderDfsTraverse(this, result);
+
+        return result;
+    }
+
+    private void inOrderDfsTraverse(BinaryTree<E> tree, List<AbstractBinaryTree<E>> result) {
+        if (tree.getLeft() != null) {
+            inOrderDfsTraverse(tree.left, result);
+        }
+        result.add(tree);
+
+        if (tree.getRight() != null) {
+            inOrderDfsTraverse(tree.right, result);
+        }
     }
 
     @Override
     public List<AbstractBinaryTree<E>> postOrder() {
-        return null;
+        List<AbstractBinaryTree<E>> result = new ArrayList<>();
+
+        postOrderDfsTraverse(this, result);
+
+        return result;
+    }
+
+    private void postOrderDfsTraverse(BinaryTree<E> tree, List<AbstractBinaryTree<E>> result) {
+        if (tree.getLeft() != null) {
+            postOrderDfsTraverse(tree.left, result);
+        }
+
+        if (tree.getRight() != null) {
+            postOrderDfsTraverse(tree.right, result);
+        }
+        result.add(tree);
     }
 
     @Override
     public void forEachInOrder(Consumer<E> consumer) {
 
+        inOrderForEach(this, consumer);
+    }
+
+    private void inOrderForEach(BinaryTree<E> tree, Consumer<E> consumer) {
+        if (tree.getLeft() != null) {
+            inOrderForEach(tree.left, consumer);
+        }
+
+        consumer.accept(tree.getKey());
+
+        if (tree.getRight() != null) {
+            inOrderForEach(tree.right, consumer);
+        }
     }
 }

@@ -1,0 +1,2 @@
+public class MyClass2 {
+}

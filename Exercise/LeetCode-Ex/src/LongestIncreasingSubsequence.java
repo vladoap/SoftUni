@@ -4,6 +4,7 @@ public class LongestIncreasingSubsequence {
 
     public static void main(String[] args) {
 
+        System.out.println("dasdsa" + 100 + 100);
         int[] nums = {4, 10, 4, 3, 8, 9};
         System.out.println(lengthOfLIS(nums));
     }

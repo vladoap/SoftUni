@@ -8,6 +8,5 @@ public class Main {
         int value = c - '0';
 
         System.out.println(value);
-
     }
     }
